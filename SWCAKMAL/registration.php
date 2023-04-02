@@ -1,44 +1,19 @@
 <?php
-/*
-Author: muhammad Abba Gana
-Website: www.guidetricks.blogspot.com
-*/
+
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-<!--
-		*******************************************************************************
 
-		I M P O R T A N T -- N O T I C E
-		- - - - - - - - -    - - - - - -
-
-		created by MUhammad Abba Gana
-
-		Do NOT copy and paste this code from a web browser "View Source" Window.
-
-		The actual code contains server-side function calls which do not appear in a
-		"View Source" situation even copy cannot work!!
-
-		Please refer to the supplied templates on the product CD.
-		
-			for more contact me on the following details;
-
-			email address: abbagana79@gmail.com
-			phone number: +2349039016969
-			website:www.Guidetricks.blogspot.com
-
-		*******************************************************************************
-	-->
 <meta charset="utf-8">
 <title>Registration Form</title>
 <link rel="stylesheet" href="css/login.css" />
 </head>
-<body>
+<body style="background-color: rgb(18, 25, 134) ;">
 <center>
 <div class="form-group">
-	<th class="nav" align="center"><img src="https://www.kuptm.edu.my/images/2023/uptmLogo.png" width="500" height="200"></th>
-	<strong><marquee behavior="alternate">WELCOME TO COMPUTER SCIENCE DEPARTMENT F.C.E - YOLA CHAT REGISTRATION SITE</marquee></span></font></div></strong>
+	<th class="nav" align="center"><img src="https://www.uptm.edu.my/images/logo/UPTM_Logo_WEB.png" width="500" height="200"></th>
+	<strong style="color: aliceblue;"><marquee behavior="alternate">WELCOME TO COMPUTER SCIENCE DEPARTMENT F.C.E - ZUL AZRI CHAT REGISTRATION SITE</marquee></span></font></div></strong>
 <?php
 	require('db.php');
     // If form submitted, insert values into the database.
@@ -66,13 +41,13 @@ Website: www.guidetricks.blogspot.com
         $query = "INSERT into `users` (username, fullname, trn_date, Department, pss, question, answer) VALUES ('$username', '$fullname', '$trn_date', '$Department', '$pss', '$question', '$answer')"; 
         $result = mysqli_query($conn,$query);
         if($result){
-            echo "<div class='form'><h3>You are registered successfully.</h3><br/>Click here to <a href='index.php'>Login</a></div>";
+            echo "<div class='form'><h3> You are registered successfully.</h3><br/>Click here to <a href='index.php'>Login</a></div>";
         }
     }else{
 ?>
 <div class="form">
-<body style="background-color: brown ;">
-<h1>Registration Form</h1>
+
+<h1 style="color: aliceblue;">Registration Form</h1>
 <form name="registration" action="" method="post">
 <input type="number" name="username" placeholder="Student ID" required />
 <input type="fullname" name="fullname" placeholder="Full Name" required />
@@ -80,7 +55,7 @@ Website: www.guidetricks.blogspot.com
 		<option>----------Chosse your Department--------</option>
         <option>Computer Science</option>
         <option>Copporate Communication</option>
-        <option>Accwunt</option>
+        <option>Account</option>
         <option>TeSL</option>     
     </select>
 	<input type="pss" name="pss" placeholder="Password" required />
@@ -97,10 +72,10 @@ Website: www.guidetricks.blogspot.com
 	<input type="answer" name="answer" placeholder="answer" required />
 <input type="submit" name="submit" value="Register" />
 </form>
-</body>
+
 </div>
 <?php } ?>
 </body>
 <br><br><br><br>
-<p>Programmed and Designed by: <a><strong><a href="https://www.instagram.com/azrayyyie/">Zul Azri Bin Jalalludin </strong></p>
+<p style="color: aliceblue;">Programmed and Designed by: <a><strong style="color: aliceblue;"><a href="https://www.instagram.com/azrayyyie/">Zul Azri Bin Jalalludin </strong></p>
 </html>

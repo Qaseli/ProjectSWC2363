@@ -20,7 +20,7 @@ $resultas = $db->prepare("SELECT * FROM users WHERE username= :a AND  answer= :b
 	?>
 Your Password is : <?php echo $rowas['pss']; ?>
 <br /><br /><br /><br /><br />
-<p> Powered by Abba Gana</p>
+<p> Powered by Zul Azri </p>
 <?php
 }
 }

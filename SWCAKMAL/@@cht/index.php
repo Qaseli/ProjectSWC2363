@@ -3,9 +3,9 @@ session_start ();
 function loginForm() {
     echo '
 	<div class="form-group">
-	<th class="nav" align="center"><img src="images/logo.jpg" width="200" height="150"></th>
-	<strong><marquee behavior="alternate">WELCOME TO COMPUTER SCIENCE DEPARTMENT F.C.E - YOLA CHAT SITE</marquee></span></font></div></strong>
-	</br></br><a href="../choose.php">Goto Home Page</a>
+	<th class="nav" align="center"><img src="https://www.uptm.edu.my/images/logo/UPTM_Logo_WEB.png" width="250" height="150"></th>
+	<strong style="color: aliceblue;"><marquee behavior="alternate">WELCOME TO COMPUTER SCIENCE DEPARTMENT F.C.E - ZUL AZRI CHAT SITE</marquee></span></font></div></strong>
+	</br></br><a href="../choose.php" style="color: rgb(0, 133, 250);">Go to Home Page</a>
 		<div id="loginform">
 			<form action="index.php" method="post">
 			<h1>Live Chat</h1><hr/>
@@ -45,7 +45,7 @@ if (isset ( $_GET ['logout'] )) {
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 </head>
-<body>
+<body style="background-color: rgb(41, 14, 148) ;">>
 <?php
 	if (! isset ( $_SESSION ['name'] )) {
 	loginForm ();
@@ -56,7 +56,7 @@ if (isset ( $_GET ['logout'] )) {
 	<h1>Welcome To SWC 2373</h1>
 	<h4>~ Live Chat ~</h4><hr/>
 		<p class="welcome"><b>HI - <a><?php echo $_SESSION['name']; ?></a></b></p>
-		<p class="logout"><a id="exit" href="#" class="btn btn-default">Exit Live Chat</a></p>
+		<p class="logout"><a id="exit" href="../choose.php" class="btn btn-default">Exit Live Chat</a></p>
 	<div style="clear: both"></div>
 	</div>
 	<div id="chatbox">
@@ -111,7 +111,7 @@ setInterval (loadLog, 2500);
 }
 ?>
 </body>
-<p><Strong><center> Programmed by Zul Azri Bin Jalalludin</center></Strong></p>
-<p><Strong><center> Design by Nik Muhammad Faris Bin Nik Zaki</center></Strong></p>
-<p><Strong><center> Analyse by Hawari Bin Azuwar</center></Strong></p>
+<p><Strong style="color: aliceblue;"><center> Programmed by Zul Azri Bin Jalalludin</center></Strong></p>
+<p><Strong style="color: aliceblue;"><center> Design by Nik Muhammad Faris Bin Nik Zaki</center></Strong></p>
+<p><Strong style="color: aliceblue;"><center> Analyse by Hawari Bin Azuwar</center></Strong></p>
 </html>

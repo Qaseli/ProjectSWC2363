@@ -14,8 +14,8 @@ Website: www.guidetricks.blogspot.com
 <body>
 <center>
 <div class="form-group">
-	<th class="nav" align="center"><img src="https://www.kuptm.edu.my/images/2023/uptmLogo.png" width="500" height="200"></th>
-	<strong><marquee behavior="alternate">WELCOME TO COMPUTER SCIENCE DEPARTMENT F.C.E - YOLA CHAT SITE</marquee></span></font></div></strong>
+	<th class="nav" align="center"><img src="https://www.uptm.edu.my/images/logo/UPTM_Logo_WEB.png" width="500" height="200"></th>
+	<strong style="color: aliceblue;"><marquee behavior="alternate">WELCOME TO COMPUTER SCIENCE DEPARTMENT F.C.E - ZUL AZRI CHAT SITE</marquee></span></font></div></strong>
 <?php
 	require('db.php');
 	session_start();
@@ -42,19 +42,19 @@ Website: www.guidetricks.blogspot.com
     }else{
 ?>
 <div class="form">
-<body style="background-color: brown ;">
-<h1>Log In</h1>
+<body style="background-color: rgb(41, 14, 148) ;">
+<h1 style="color: aliceblue;">Log In</h1>
 <form action="" method="post" name="login">
 <input type="number" name="username" placeholder="Student ID" required />
 <input type="pss" name="pss" placeholder="Password" required />
 <input name="submit" type="submit" value="Login" />
 </form>
-<p>Not registered yet? <a href='registration.php'>Register Here</a></p>
-<p align="right">Forgot Password? Click <a href="#" onClick="MyWindow=window.open('pwordrecover.php','MyWindow','toolbar=no,location=no,directories=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=300,height=250'); return false;">Here</a></span></p>
+<p style="color: aliceblue;">Not registered yet? <a href='registration.php'>Register Here</a></p>
+<p align="center" style="color: aliceblue;">Forgot Password? Click <a href="#" onClick="MyWindow=window.open('pwordrecover.php','MyWindow','toolbar=no,location=no,directories=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=300,height=250'); return false;">Here</a></span></p>
 </body>
 </div>
 <?php } ?>
 </body>
 <br><br><br><br>
-<p>Programmed and Designed by: <a><strong><a href="https://www.instagram.com/azrayyyie/">Zul Azri Bin Jalalludin </strong></p>
+<p style="color: aliceblue;">Programmed and Designed by: <a><strong><a href="https://www.instagram.com/azrayyyie/">Zul Azri Bin Jalalludin </strong></p>
 </html>
